@@ -7,15 +7,18 @@ import {
 import VaccineScreen from './VaccineScreen.js';
 import AboutScreen from './AboutScreen.js';
 import Theme from '../theme.js';
+import CertificateScreen from './CertificateScreen.js';
 
 const {Colors, Fonts} = Theme;
 
 const staticIcons = {
+  Certificate: require('../../assets/images/vaccine.png'),
   Vaccine: require('../../assets/images/vaccine.png'),
   About: require('../../assets/images/info.png'),
 };
 
 const activeIcons = {
+  Certificate: require('../../assets/images/vaccine-active.png'),
   Vaccine: require('../../assets/images/vaccine-active.png'),
   About: require('../../assets/images/info-active.png'),
 };
@@ -63,6 +66,7 @@ export default function MainScreen(props) {
             height: 60,
           },
         }}>
+        <Tab.Screen name="Certificate" component={CertificateScreen} />
         <Tab.Screen name="Vaccine" component={VaccineScreen} />
         <Tab.Screen name="About" component={AboutScreen} />
       </Tab.Navigator>

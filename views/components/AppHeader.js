@@ -10,7 +10,9 @@ class AppHeader extends Component {
     return (
       <View style={styles.row}>
         <Text style={styles.title}>{this.props.title}</Text>
-        <SLIcon name="location-pin" size={20} style={styles.icon} />
+        {this.props.type !== "certificate" && (
+          <SLIcon name="location-pin" size={20} style={styles.icon} />
+        )}
       </View>
     );
   }

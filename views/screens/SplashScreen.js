@@ -16,7 +16,7 @@ class SplashScreen extends Component {
   }
 
   async onComplete() {
-    this.props.navigation.dispatch(StackActions.replace('Start'));
+    this.props.navigation.dispatch(StackActions.replace('Main'));
   }
 
   render() {

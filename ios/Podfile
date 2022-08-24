@@ -16,6 +16,10 @@ target 'VacCentre' do
 
   pod 'RNInAppBrowser', :path => '../node_modules/react-native-inappbrowser-reborn'
 
+  pod 'react-native-blob-util', :path => '../node_modules/react-native-blob-util'
+
+  pod 'react-native-pdf', :path => '../node_modules/react-native-pdf'
+
   target 'VacCentreTests' do
     inherit! :complete
     # Pods for testing
